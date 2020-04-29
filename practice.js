@@ -120,9 +120,9 @@ const mathSum = add(3, 4)
 function faveColorFinder(color) {
   if (color === 'red') {
     return 'red is a great color'
-  } if (color === 'green') {
+  } else if (color === 'green') {
     return 'green is a solid favorite color'
-  } if (color === 'black') {
+  } else if (color === 'black') {
     return 'so trendy'
   } else {
     return 'you need to evaluate your favorite color choice'
