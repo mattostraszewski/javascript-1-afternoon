@@ -37,8 +37,8 @@ const devMountainGoal = null;
 
 function greeting(name) {
   return `Hello, ${name}`;
-}
-greeting()
+};
+
 //////////////////PROBLEM 7////////////////////
 
 //Write a function expression called newGreeting.
@@ -46,14 +46,14 @@ greeting()
 
 const newGreeting = function (name) {
   return `Hello, ${name}`;
-}
+};
 
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-const groceries = ["apples", "milk", "eggs", "bread"]
+const groceries = ["apples", "milk", "eggs", "bread"];
 
 //////////////////PROBLEM 9////////////////////
 
@@ -67,12 +67,12 @@ const dog = {
   color: "White",
   age: 8,
   goodBoy: false
-}
+};
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-const devMountainClassPet = dog.name
+const devMountainClassPet = dog.name;
 
 //////////////////PROBLEM 10////////////////////
 
@@ -83,15 +83,15 @@ const devMountainClassPet = dog.name
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
-function nameCheck(name) {
+const nameCheck = (name) => {
   if (name === 'Steven') {
-    return 'What is up Steven?'
+    return 'What is up Steven?';
   } if (name === 'Bryan') {
-    return 'Hey Bryan!'
+    return 'Hey Bryan!';
   } else {
-    return `Cool name, ${name}`
+    return `Cool name, ${name}`;
   }
-}
+};
 
 //////////////////PROBLEM 11////////////////////
 
@@ -99,14 +99,14 @@ function nameCheck(name) {
 // that will be numbers.
 // The add function should return the two parameters added together
 
-function add(x, y) {
-  return x + y
-}
+const add = (x, y) => {
+  return x + y;
+};
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-const mathSum = add(3, 4)
+let mathSum = add(3, 4);
 
 //////////////////PROBLEM 12////////////////////
 
@@ -117,18 +117,18 @@ const mathSum = add(3, 4)
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-function faveColorFinder(color) {
+const faveColorFinder = (color) => {
   if (color === 'red') {
-    return 'red is a great color'
+    return 'red is a great color';
   } else if (color === 'green') {
-    return 'green is a solid favorite color'
+    return 'green is a solid favorite color';
   } else if (color === 'black') {
-    return 'so trendy'
+    return 'so trendy';
   } else {
-    return 'you need to evaluate your favorite color choice'
+    return 'you need to evaluate your favorite color choice';
   }
 
-}
+};
 
 
 //////////////////PROBLEM 13////////////////////
@@ -173,7 +173,7 @@ let age = 22
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
-age = 23
+age++
 
 // Good news! We can live forever. Set your age to 999
 
